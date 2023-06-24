@@ -1,4 +1,10 @@
 en:
+  general:
+    branding: 
+      name: "Bici"
   home:
     start: "Home"
     login: "Login"
+    racing: "Racing"
+  products:
+    name:  Products

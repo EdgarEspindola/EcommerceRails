@@ -1,4 +1,10 @@
-en:
+es:
+  general:
+    branding: 
+      name: "Bici"
   home:
     start: "Inicio"
     login: "Login"
+    racing: "A Rodar"
+  products:
+    name:  Productos
