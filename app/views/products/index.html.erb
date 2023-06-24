@@ -1,8 +1,6 @@
 
 <%= render "shared/navbar" %>
 
-<p id="notice"><%= notice %></p>
-
 <div class="clearfix"><br/>
 <center>
   <h3> Las bicicletas más vendidas </h3>
@@ -36,9 +34,11 @@
         </p>
         
         <p align="right">
+              <% if current_manager.present? %>
               <!-- <%= link_to 'Show', product, class: "btn btn-primary" %> -->
               <%= link_to 'Edit', edit_product_path(product), class: "btn btn-danger" %>
               <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %>
+              <%end%>
         </p>
       </div>
 

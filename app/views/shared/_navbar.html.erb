@@ -26,9 +26,15 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#"> 
-                  	<%= t "home.login" %> 
-                  </a>
+                    <% if current_manager.present? %>
+
+                  	 <%= link_to "Cerrar sesión", "/managers/sign_out", class: "nav-link"  %> 
+                     
+                    <% else %>
+
+                      <%= link_to t("home.login"), "/managers/sign_in", class: "nav-link" %> 
+
+                    <% end %>
                 </li>
 
               </ul>
